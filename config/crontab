@@ -1,0 +1,5 @@
+# ISP speedtest – minden 5 percben
+*/5 * * * * root /etc/zabbix/script/speedtest-isp.sh --run > /dev/null 2>&1
+
+# LAN speedtest – minden 5 percben
+*/5 * * * * root /etc/zabbix/script/speedtest-lan.sh -a > /dev/null 2>&1
