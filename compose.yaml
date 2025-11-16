@@ -1,0 +1,10 @@
+services:
+  zabbix-docker-speedtest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zabbix-lan-monitor
+    container_name: zabbix-docker-speedtest
+    ports:
+      - "10052:10050"
+    restart: unless-stopped
